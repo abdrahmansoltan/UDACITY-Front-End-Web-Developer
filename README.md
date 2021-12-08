@@ -1,2 +1,1 @@
-# UDACITY Front End Web Developer
- 
+# UDACITY Front End Web Developer Projects

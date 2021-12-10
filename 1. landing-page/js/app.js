@@ -39,13 +39,8 @@ let lastScrollY = 0;
 const sections = document.querySelectorAll('section');
 
 // Holds the button used to scroll to top
-const goUpButton = document.querySelector('#holdBotton');
+const goUpButton = document.querySelector('#go-up-button');
 
-/**
- * End Global Variables
- * Start Helper Functions
- * 
-*/
 
 /**
  * Function definitions (in order of when they are called in code)
@@ -82,7 +77,7 @@ function makeNavButton(section) {
 // Adds listeners to 3 places:
 // 1. navigation bar to listen for clicks
 // 2. document to listen for scroll
-// 3. holdBotton to listen for click
+// 3. go-up-button to listen for click
 // These are the only 3 listeners the code uses.
 function addListeners(navBar) {
     navBar.addEventListener('click', onNavClick);
@@ -97,7 +92,7 @@ function onNavClick(event) {
 }
 
 // Checks the position of page in the window. Controls visibility of the
-// holdBotton. Checks if user is scrolling up or down, sets the screen
+// go-up-button. Checks if user is scrolling up or down, sets the screen
 // coverage ratio accordingly. Uses this ratio to determine which section
 // is active. If active section is different from previous active section
 // in activeSection, then calls functions to set new active section and 
